@@ -26,3 +26,13 @@ for i=1:M;
     end
    
 end
+
+% Plot the locations of the first 5 cafes
+figure;
+scatter(C(1:5, 1), C(1:5, 2), 'filled')
+title('Locations of the First 5 Cafes')
+xlabel('X Coordinate')
+ylabel('Y Coordinate')
+grid on
+axis([0 1 0 1])
+text(C(1:5, 1), C(1:5, 2), {'Cafe1', 'Cafe2', 'Cafe3', 'Cafe4', 'Cafe5'}, 'VerticalAlignment', 'bottom', 'HorizontalAlignment', 'right')
